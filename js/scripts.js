@@ -36,7 +36,22 @@ $document.ready(function() {
         if (questionTwo === 'Ruby' || questionTwo === 'Diamonds') {
             $('#question2').hide();
             $('#question3').show();
-        } else if (question)
+        } else if (questionTwo === 'Opals' || questionTwo === 'Sapphires') {
+            $('#question2').hide();
+            $('#question4').show();
+        }
+
+        const questionThree = (document).quiz.question3.value;
+        console.log('In nex question ' + questionThree);
+        if (questionThree === 'Determined' || questionThree === 'Procastinator') {
+            $('#question3').hide();
+            $('#question4').show();
+        } else if (questionThree === 'Witty' || questionThree === 'Loyal') {
+            $('#question3').hide();
+            $('#question5').show();
+            $('#complete_survey').show();
+            $('#next_button').hide();
+        }
 
 
     }
