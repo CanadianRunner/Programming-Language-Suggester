@@ -53,6 +53,20 @@ $document.ready(function() {
             $('#next_button').hide();
         }
 
+        const questionFour = (document).quiz.question4.value;
+        console.log('In next question ' + questionFour);
+        if (questionFour === 'Honolulu' || questionFour === 'Auckland') {
+            $('#question4').hide();
+            $('#question5').show();
+            $('#complete_quiz').show();
+            $('#next_button').hide();
+        } else if (questionFour === 'Paris' || questionFour === 'Dublin') {
+            $('#question4').hide();
+            $('#question5').show();
+            $('#complete_quiz').show();
+            $('#next_button').hide();
+        }
+
 
     }
 });
