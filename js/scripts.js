@@ -33,6 +33,10 @@ $document.ready(function() {
 
         const questionTwo = (document).quiz.question2.value;
         console.log('In the next question ' + questionTwo);
+        if (questionTwo === 'Ruby' || questionTwo === 'Diamonds') {
+            $('#question2').hide();
+            $('#question3').show();
+        } else if (question)
 
 
     }
