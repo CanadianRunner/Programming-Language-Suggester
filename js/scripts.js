@@ -71,6 +71,11 @@ $document.ready(function() {
     function check() {
         console.log("Complete Survey Click");
 
-        const
+        const questionOne = document.quiz.question1.value;
+        const questionTwo = document.quiz.question2.value;
+        const questionThree = document.quiz.question3.value;
+        const questionFour = document.quiz.question4.value;
+        const questionFive = document.quiz.question5.value;
+        let correct = 0;
     })
 });
