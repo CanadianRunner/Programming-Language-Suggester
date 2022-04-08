@@ -4,6 +4,13 @@
     color: aliceblue;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px white;
+    padding: 10px;
+}
+
 .text {
     padding: 100px;
     font-family: sans-serif;
