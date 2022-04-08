@@ -49,7 +49,7 @@ $document.ready(function() {
         } else if (questionThree === 'Witty' || questionThree === 'Loyal') {
             $('#question3').hide();
             $('#question5').show();
-            $('#complete_survey').show();
+            $('#complete_quiz').show();
             $('#next_button').hide();
         }
 
@@ -69,7 +69,7 @@ $document.ready(function() {
     }
 
     function check() {
-        console.log("Complete Survey Click");
+        console.log("Complete Quiz Click");
 
         const questionOne = document.quiz.question1.value;
         const questionTwo = document.quiz.question2.value;
