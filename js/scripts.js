@@ -26,7 +26,7 @@ $(document).ready(function() {
 
         const questionOne = (document).survey.question1.value;
         console.log('In next question ' + questionOne);
-        if (questionOne == "Book" || questionOne == "Exercise") {
+        if (questionOne === "Book" || questionOne === "Exercise") {
             $("#question1").hide();
             $("#question2").show();
         } else if (questionOne == "Beach" || questionOne == "Sports") {
