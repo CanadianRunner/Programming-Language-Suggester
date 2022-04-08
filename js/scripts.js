@@ -7,6 +7,20 @@ $document.ready(function() {
         $('#restart_button').hide();
         $('#question1').show();
         $('#next_button').show();
-        $('#survey_complete').hide();
+        $('#quiz_complete').hide();
     });
+
+    $('#question2').hide();
+    $('#question3').hide();
+    $('#question4').hide();
+    $('#question5').hide();
+
+    $('#complete_quiz').hide();
+    $('#quiz_complete').hide();
+    $('restart_button').hide();
+
+    function next_question() {
+
+
+    }
 });
