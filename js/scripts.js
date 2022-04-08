@@ -66,7 +66,11 @@ $document.ready(function() {
             $('#complete_quiz').show();
             $('#next_button').hide();
         }
-
-
     }
+
+    function check() {
+        console.log("Complete Survey Click");
+
+        const
+    })
 });
