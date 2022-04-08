@@ -8,6 +8,7 @@ $document.ready(function() {
         $('#question1').show();
         $('#next_button').show();
         $('#quiz_complete').hide();
+
     });
 
     $('#question2').hide();
@@ -17,36 +18,36 @@ $document.ready(function() {
 
     $('#complete_quiz').hide();
     $('#quiz_complete').hide();
-    $('restart_button').hide();
+    $('#restart_button').hide();
 
     function next_question() {
 
         const questionOne = (document).quiz.question1.value;
         console.log('In next question ' + questionOne);
-        if (questionOne === 'Book' || questionOne === 'Exercise') {
+        if (questionOne == 'Book' || questionOne == 'Exercise') {
             $('#question1').hide();
             $('#question2').show();
-        } else if (questionOne === 'Beach' || questionOne === 'Sports') {
+        } else if (questionOne == 'Beach' || questionOne == 'Sports') {
             $('#question1').hide();
             $('#question3').show();
         }
 
         const questionTwo = (document).quiz.question2.value;
         console.log('In the next question ' + questionTwo);
-        if (questionTwo === 'Ruby' || questionTwo === 'Diamonds') {
+        if (questionTwo == 'Ruby' || questionTwo == 'Diamonds') {
             $('#question2').hide();
             $('#question3').show();
-        } else if (questionTwo === 'Opals' || questionTwo === 'Sapphires') {
+        } else if (questionTwo == 'Opals' || questionTwo == 'Sapphires') {
             $('#question2').hide();
             $('#question4').show();
         }
 
         const questionThree = (document).quiz.question3.value;
         console.log('In nex question ' + questionThree);
-        if (questionThree === 'Determined' || questionThree === 'Procastinator') {
+        if (questionThree == 'Determined' || questionThree == 'Procastinator') {
             $('#question3').hide();
             $('#question4').show();
-        } else if (questionThree === 'Witty' || questionThree === 'Loyal') {
+        } else if (questionThree == 'Witty' || questionThree == 'Loyal') {
             $('#question3').hide();
             $('#question5').show();
             $('#complete_quiz').show();
@@ -55,12 +56,12 @@ $document.ready(function() {
 
         const questionFour = (document).quiz.question4.value;
         console.log('In next question ' + questionFour);
-        if (questionFour === 'Honolulu' || questionFour === 'Auckland') {
+        if (questionFour == 'Honolulu' || questionFour == 'Auckland') {
             $('#question4').hide();
             $('#question5').show();
             $('#complete_quiz').show();
             $('#next_button').hide();
-        } else if (questionFour === 'Paris' || questionFour === 'Dublin') {
+        } else if (questionFour == 'Paris' || questionFour == 'Dublin') {
             $('#question4').hide();
             $('#question5').show();
             $('#complete_quiz').show();
@@ -78,27 +79,27 @@ $document.ready(function() {
         const questionFive = document.quiz.question5.value;
         let correct = 0;
 
-        if (questionOne === 'Book' || questionOne === 'Exercise') {
+        if (questionOne == 'Book' || questionOne == 'Exercise') {
             correct++;
         } else {
             correct += 2;
         }
-        if (questionTwo === 'Ruby' || questionTwo === 'Opals') {
+        if (questionTwo == 'Ruby' || questionTwo == 'Opals') {
             correct++;
         } else {
             correct += 2;
         }
-        if (questionThree === 'Witty' || questionThree === 'Procrastinator') {
+        if (questionThree == 'Witty' || questionThree == 'Procrastinator') {
             correct++;
         } else {
             correct += 2;
         }
-        if (questionFour === 'Paris' || questionFour === 'Dublin') {
+        if (questionFour == 'Paris' || questionFour == 'Dublin') {
             correct++;
         } else {
             correct += 2;
         }
-        if (questionfive === 'Fall' || questionFive === 'Spring') {
+        if (questionfive == 'Fall' || questionFive == 'Spring') {
             correct++;
         } else {
             correct += 2;
