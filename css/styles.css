@@ -1,0 +1,28 @@
+.logo {
+    padding: 100px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+.text {
+    padding: 100px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+#after-completion {
+    visibility: hidden;
+}
+
+.card-img-top {
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+}
+
+.quiz {
+    color: aliceblue;
+    padding: 120px;
+    right: 200px;
+    border: 3px black;
+}
