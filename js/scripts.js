@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log('test');
     $('#next_button').click(next_question);
     $('#complete_survey').click(check);
     $('#restart_button').click(function() {
@@ -25,7 +24,6 @@ $(document).ready(function() {
     function next_question() {
 
         const questionOne = (document).survey.question1.value;
-        console.log('In next question ' + questionOne);
         if (questionOne == "Book" || questionOne == "Exercise") {
             $("#question1").hide();
             $("#question2").show();
@@ -35,7 +33,6 @@ $(document).ready(function() {
         }
 
         const questionTwo = (document).survey.question2.value;
-        console.log('In next question ' + questionTwo);
         if (questionTwo == "Ruby" || questionTwo == "Diamonds") {
             $("#question2").hide();
             $("#question3").show();
@@ -45,7 +42,6 @@ $(document).ready(function() {
         }
 
         const questionThree = (document).survey.question3.value;
-        console.log('In next question ' + questionThree);
         if (questionThree == "Determined" || questionThree == "Procastinator") {
             $("#question3").hide();
             $("#question4").show();
@@ -57,7 +53,6 @@ $(document).ready(function() {
         }
 
         const questionFour = (document).survey.question4.value;
-        console.log('In next question ' + questionFour);
         if (questionFour == "Honolulu" || questionFour == "Auckland") {
             $("#question4").hide();
             $("#question5").show();
@@ -73,7 +68,6 @@ $(document).ready(function() {
     }
 
     function check() {
-        console.log('Complete Survey Click');
 
         const questionOne = document.survey.question1.value;
         const questionTwo = document.survey.question2.value;
